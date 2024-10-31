@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is my simple frontend only web-application to play rock paper scissors against a computer opponent. It features three gamemodes.
+This is my simple front-end only web application to play rock paper scissors against a computer opponent. It features three gamemodes.
 
 ![RPS 1](https://github.com/user-attachments/assets/452ea845-2243-4a1c-a1f6-f47ec31c32cd)
 
