@@ -1,29 +1,23 @@
-# vue-project
+# Rock Paper Scissors Application
 
-This template should help get you started developing with Vue 3 in Vite.
+## Introduction
 
-## Recommended IDE Setup
+This is my simple front-end only web application to play rock paper scissors against a computer opponent. It features three gamemodes.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![RPS 1](https://github.com/user-attachments/assets/452ea845-2243-4a1c-a1f6-f47ec31c32cd)
 
-## Customize configuration
+## Gameplay
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Upon selecting a gamemode, you simply select rock, paper, or scissors to proceed. Its purely luck based, with the computer's logic being randomly generated.
 
-## Project Setup
+![RPS 5](https://github.com/user-attachments/assets/d95efe7c-8767-4976-8d36-920eec3c7674)
 
-```sh
-npm install
-```
+![RPS 6](https://github.com/user-attachments/assets/2bc9b25e-ec16-42f9-a0c1-375b162ae113)
 
-### Compile and Hot-Reload for Development
+In the gamemodes that allow an ending, there is a completion screen when point maximum is reached.
 
-```sh
-npm run dev
-```
+![RPS 3](https://github.com/user-attachments/assets/4ece2ee4-4160-4e63-a8fd-052fdbddb861)
 
-### Compile and Minify for Production
+Lastly, there is an endless mode, where there is no point cap.
 
-```sh
-npm run build
-```
+![RPS 4](https://github.com/user-attachments/assets/900e2b8f-3cf7-4330-ade6-264eeab02834)

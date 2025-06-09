@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1>{{ matchMessage }}</h1>
-    <h2>Try Again? <a>YES</a> | <router-link id="home-link" @click="this.$store.commit('CLEAR_MODE')" v-bind:to="{ name: 'home' }" >NO</router-link></h2>
+    <h2>Try Again? <a>YES</a> | <router-link @click="this.$store.commit('CLEAR_MODE')" id="home-link" v-bind:to="{ name: 'home' }" >NO</router-link></h2>
   </main>
 </template>
 
