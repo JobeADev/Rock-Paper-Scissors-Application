@@ -105,22 +105,18 @@ export default {
       this.playerScore = 0;
       this.computerScore = 0;
       this.isGameOver = false;
-    }
-  },
-  computed: {
-    // playerHand() {
-    //   return this.playerChoice ? `You chose ${this.playerChoice}` : '';
-    // },
-    // computerHand() {
-    //   return this.computerChoice ? `Computer chose ${this.computerChoice}` : '';
-    // },
-    // matchResult() {
-    //   return this.matchMessage ? this.matchMessage : '';
-    // }
+    },
   },
   created() {
     this.gameMode = parseInt(localStorage.getItem('mode'));
     this.$store.commit('SET_MODE', this.gameMode);
+  },
+  beforeUpdate() {
+    if (this.$store.state.previousMode) {
+      if (this.$store.state.previousMode === this.$store.state.modeSelected) {
+        this.gameMode = this.$store.state.previousMode
+      }
+    }
   }  
 }
 </script>
