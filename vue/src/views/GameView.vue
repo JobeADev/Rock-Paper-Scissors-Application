@@ -13,22 +13,26 @@
             <img class="hands" src="../images/Scissors.jpg" alt="Scissors" @click="selectHand('Scissors')" />
         </span>
         <table id="results-table" v-show="playerChoice != ''">
+          <thead>
             <tr>
-                <td class="player-choice">You chose <a class="choice-name">{{ playerChoice }}</a></td>
-                <td class="computer-choice">Computer chose <a class="choice-name">{{ computerChoice }}</a></td>
+              <td class="player-choice">You chose <p class="choice-name">{{ playerChoice }}</p></td>
+              <td class="computer-choice">Computer chose <p class="choice-name">{{ computerChoice }}</p></td>
             </tr>
+          </thead>
+          <tbody>
             <tr>
-                <td>
-                    <img v-show="playerChoice === 'Rock'" src="../images/Rock.jpg" alt="Rock" />
-                    <img v-show="playerChoice === 'Paper'" src="../images/Paper.jpg" alt="Paper" />
-                    <img v-show="playerChoice === 'Scissors'" src="../images/Scissors.jpg" alt="Scissors" />
-                </td>
-                <td>
-                    <img v-show="computerChoice === 'Rock'" src="../images/Rock.jpg" alt="Rock" />
-                    <img v-show="computerChoice === 'Paper'" src="../images/Paper.jpg" alt="Paper" />
-                    <img v-show="computerChoice === 'Scissors'" src="../images/Scissors.jpg" alt="Scissors" />
-                </td>
+              <td>
+                <img v-show="playerChoice === 'Rock'" src="../images/Rock.jpg" alt="Rock" />
+                <img v-show="playerChoice === 'Paper'" src="../images/Paper.jpg" alt="Paper" />
+                <img v-show="playerChoice === 'Scissors'" src="../images/Scissors.jpg" alt="Scissors" />
+              </td>
+              <td>
+                <img v-show="computerChoice === 'Rock'" src="../images/Rock.jpg" alt="Rock" />
+                <img v-show="computerChoice === 'Paper'" src="../images/Paper.jpg" alt="Paper" />
+                <img v-show="computerChoice === 'Scissors'" src="../images/Scissors.jpg" alt="Scissors" />
+              </td>
             </tr>
+          </tbody>
         </table>
         <h2>{{ matchMessage }}</h2>
     </main>
@@ -192,6 +196,7 @@ table {
 .choice-name {
     font-weight: bold;
     color: rgba(255, 0, 0, 0.534);
+    display: inline
 }
 
 a { 
