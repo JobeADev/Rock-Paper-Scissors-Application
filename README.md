@@ -1,5 +1,3 @@
-### **Try it out here!** -> [rock-paper-scissors-app-game.netlify.app](url)
-
 # Rock Paper Scissors Application
 
 ## Introduction
